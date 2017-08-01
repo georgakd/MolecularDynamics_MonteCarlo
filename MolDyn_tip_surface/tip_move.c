@@ -23,11 +23,9 @@ void tip_move(void)
 
 //............................................ Choose how to move the tip: (2) Feedback (constant-force) ...................................... //
 		int horiz_iter;
-		double dxmove,dymove;
 		
 		fp=fopen(move_path,"r");
 		if(fp==NULL){printf("Could not locate %s",move_path);printf("\nAborting Simulation...Press 1 for exit...\n");
-		system("PAUSE");
 		exit(1);}
 		fscanf(fp,"tip: %d\n",&tip);
 		fscanf(fp,"tip_version: %d\n",&tip_version); // 1 dynamic surface, 2 static surface

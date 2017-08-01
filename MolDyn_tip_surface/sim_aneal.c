@@ -26,7 +26,6 @@ void sim_aneal(void){
 	if (nbath_end%Tintervals==0){printf("\nThe Temperature intervals are checked and found ok\n");}
 	else
 	{	printf("Aborting Simulation because the temperature intervals are not ok...Press 1 for exit...\n");
-		system("PAUSE");
 		exit(1);}
 	
 if (aneal == 1) //simulated annealing

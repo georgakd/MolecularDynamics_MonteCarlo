@@ -21,7 +21,6 @@ void parameters(void)
 	
 	fp_config=fopen(file_path,"r");
 		if(fp_config==NULL){printf("Could not locate %s",file_path);printf("\nAborting Simulation...Press 1 for exit...\n");
-		system("PAUSE");
 		exit(1);}
 
 		fscanf(fp_config,"mypotential: %d\n",&mypotential);

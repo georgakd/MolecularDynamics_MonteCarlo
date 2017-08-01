@@ -439,7 +439,7 @@ if (resume_tip == 1){
 	xholder = sumx /Mtip; yholder = sumy /Mtip; zholder = sumz/Mtip;
 	}
 
-	if (xholder>xmax||xholder<xmin||yholder>ymax||yholder<ymin){printf("The coordinates of the holder are: ");printf("%lf\t%lf\t%lf\n",xholder,yholder,zholder);printf("\nExceed box...Press 1 for exit...\n");system("PAUSE");exit(1);}
+	if (xholder>xmax||xholder<xmin||yholder>ymax||yholder<ymin){printf("The coordinates of the holder are: ");printf("%lf\t%lf\t%lf\n",xholder,yholder,zholder);printf("\nExceed box...Press 1 for exit...\n");exit(1);}
 	else {printf("The coordinates of the holder are: ");printf("%lf\t%lf\t%lf\n",xholder,yholder,zholder);}
 	
 	A0 = (Dseper*kz) / Q; //calculation of initial cantilever amplitude
@@ -771,7 +771,7 @@ else if (tip_version==2){ //static surface
 				break;
 
 			default: 
-				{printf("You have selected a case that does not exist!!!!!!! Try again!!!!!!"); system("PAUSE"); exit(1);}
+				{printf("You have selected a case that does not exist!!!!!!! Try again!!!!!!"); exit(1);}
 
 			}
 			
@@ -892,7 +892,7 @@ switch( tip ){	//velocity of the center of mass
 					break;
 
 			default: 
-					{printf("You have selected a case that does not exist!!!!!!! Try again!!!!!!"); system("PAUSE"); exit(1);}	
+					{printf("You have selected a case that does not exist!!!!!!! Try again!!!!!!"); exit(1);}	
 	}
 		
 		
