@@ -24,3 +24,11 @@ We have used:
 - Tersoff potential
 - Linked cells optimization method
 - Jmol and Paraview visualization
+
+### How-To Build the projects
+These projects run in all platforms (Windows, MacOS, Linux) so for a unified makefile solution we use cmake.
+In order to build e.g. MolDyn project follow these steps:
+- Download cmake and follow installation guide (https://cmake.org/install/)
+- Create a bin/ directory in the same location as CMakeLists.txt
+- Go to bin/ and run cmake .. in order to perform an out-of-source build
+- All produced files and folders  will be placed at bin/
