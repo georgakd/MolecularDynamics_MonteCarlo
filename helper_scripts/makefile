@@ -39,5 +39,5 @@ $(PROJEXE):
 	$(CC) -o $(PROJEXE) z_projection.o		
 	
 clean: 
-	rm -rf *.o
-	rm -rf $(ALTEREXE)
+	rm -f *.o
+	rm -f $(ALTEREXE) $(ELONGEXE) $(REMOVEEXE) $(SIEXE) $(EXPANDEXE) $(PROJEXE)
