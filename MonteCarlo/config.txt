@@ -1,0 +1,12 @@
+mypotential: 0
+max_cycles: 1000
+cellsx: 7
+cellsy: 7
+cellsz: 16
+linkcells: 1
+resume_flag: 0
+csvout: 0
+jmolout: 1
+nsample: 100
+dmax: 0.2
+Tref: 400
